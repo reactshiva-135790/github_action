@@ -1,0 +1,15 @@
+name: Validate Workflow
+on: push
+jobs: 
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Validate html files
+        uses: test -f index.html
+
+      - name: Validate js files
+        uses: test -f script.js
+
