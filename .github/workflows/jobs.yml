@@ -1,9 +1,9 @@
 name: Jobs Test
-on: 
-  workflow_run: 
-    workflows: [First WorkFlow]
-    types: 
-      - completed
+on: push
+  # workflow_run: 
+  #   workflows: [First WorkFlow]
+  #   types: 
+  #     - completed
 jobs:
   validate:
     runs-on: ubuntu-latest
