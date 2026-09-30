@@ -1,7 +1,7 @@
 name: Jobs Test
 on: 
   workflow_run: 
-    workflows: ["First WorkFlow"]
+    workflows: [First WorkFlow]
     types: 
       - completed
 jobs:
